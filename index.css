@@ -4,6 +4,7 @@
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  font-family: 'Carrois Gothic', sans-serif;
 }
 
 .li_left {
@@ -110,7 +111,7 @@ li.dropdown {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display:block;
-  transform: translate(0, -150%);
+  transform: translate(0, -120%);
 }
 
 #trash{
