@@ -1,22 +1,45 @@
-#ul_menu {
-  list-style-type: none;
+body {
+  background-color: #010a02;
+  color: white;
+}
+#menu {
+  list-style-type: cambodian;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
+  padding: 0;/*
+  overflow: hidden;*/
   background-color: #333;
   font-family: 'Carrois Gothic', sans-serif;
+  position: fixed;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
-.li_left {
+.menu_left {
   float: left;
 }
 
-.li_right {
-  padding-right: 70px;
+.menu_right {
+  padding-right: 20px;
   float: right;
 }
 
-li a, .dropbtn {
+#logo {
+  padding-left: 20px;
+  height: 42px;
+ }
+
+ #logo_holder {
+  float: left;
+  padding-right: 20px;
+ /*
+ text-align: center;
+ background-color: black;*/
+}
+
+li a, .menu_item {
   display: inline-block;
   color: white;
   text-align: center;
@@ -24,7 +47,7 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .menu_item {
   background-color: red;
 }
 
@@ -36,7 +59,7 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 50px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -80,7 +103,7 @@ li.dropdown {
 }
 
 /* The container <div> - needed to position the dropdown content */
-.chats { 
+#chats { 
   position:fixed;
   bottom:10px;
   right:30px;
@@ -115,6 +138,7 @@ li.dropdown {
 }
 
 #trash{
+  padding-top: 60px;
   size: 40pt;
   font-family: cursive;
   padding-left: 100px;
