@@ -30,7 +30,18 @@
     </div>
   </li>
   <li class="dropdown menu_right" id="Account">
-    <a href="signup_form.html">register</a>
+    <a href="javascript:void(0)" class="menu_item">Account▼</a>
+    <div class="dropdown-content">
+      <a href="#">
+      <?php
+        $loggedIn = false;
+        if (loggedIn == true) echo "log out";
+        else echo "log in";
+      ?>
+    </a>
+      <a href="#">profile</a>
+      <a href="#">settings</a>
+    </div>
   </li>
   <li class="menu_right">
     <div>

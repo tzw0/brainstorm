@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>
+	Bra!nstorm
+</title>
+<link href="https://fonts.gifoogleapis.com/css?family=Athiti|Carrois+Gothic|Podkova|Sarabun&display=swap" rel="stylesheet">
+<link href="style.css"  rel="stylesheet" type="text/css">
+<head>
+</head>
+<body>
+<ul id="menu">
+  <div id="logo_holder">
+    <img id="logo" src="images/logo_white.gif">
+  </div>
+    <li class="dropdown menu_left">
+  	<a href="javascript:void(0)" class="menu_item" id="Public">Public▼</a>
+  	<div class="dropdown-content">
+      <a href="#">My Threads</a>
+      <a href="#">Trending</a>
+      <a href="#">Popular</a>
+      <a href="#">Categories</a>
+    </div>
+  </li>
+  <li class="dropdown menu_left">
+  	<a href="javascript:void(0)" class="menu_item" id="Private">Private▼</a>
+  	<div class="dropdown-content">
+      <a href="#">C++</a>
+      <a href="#">Java</a>
+      <a href="#">Glen_studies</a>
+    </div>
+  </li>
+  <li class="dropdown menu_right" id="Account">
+    <a href="javascript:void(0)" class="menu_item">Account▼</a>
+    <div class="dropdown-content">
+      <a href="#">login/logout</a>
+      <a href="#">profile</a>
+      <a href="#">settings</a>
+    </div>
+  </li>
+  <li class="menu_right">
+    <div>
+      <button id="search_btn"><img src="images/search_icon.gif" width="20px"></button>
+      <input id="search_bar" type="text" placeholder="Search..">
+    </div>
+  </li>
+ </ul>
+
+<div id="chats">
+<script src="scripts/script.js"></script>
+  <button onclick="myFunction()" class="chatbtn">Chatrooms▲
+  </button>
+  <div id="Chatbox" class="chat-content">
+    <a href="#">glen</a>
+    <a href="#">wong</a>
+    <a href="#">shu</a>
+    <a href="#">ze</a>
+  </div>
+</div>
+<div id="main">
+  <h1>Sign up</h1>
+  <div> 
+    <form action="/signup.php" target="_self">
+      <fieldset>
+         <legend>Personal information:</legend>
+            Username:<br>
+            <input type="text" name="Username"><br>
+            Password:<br>
+            <input type="text" name="Password"><br>
+            Email:<br>
+            <input type="text" name="Email"><br>
+            School (optional):<br>
+            <input type="text" name="School"><br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br>
+            <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+</div>
+</body>
+</html>
