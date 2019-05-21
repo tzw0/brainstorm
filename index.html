@@ -3,14 +3,14 @@
 <title>
 	Bra!nstorm
 </title>
-<link href="index.css"  rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Athiti|Carrois+Gothic|Podkova|Sarabun&display=swap" rel="stylesheet">
+<link href="stylesheets/index.css"  rel="stylesheet" type="text/css">
 <head>
 </head>
 <body>
 <ul id="menu">
   <div id="logo_holder">
-    <img id="logo" src="logo_white.gif">
+    <img id="logo" src="images/logo_white.gif">
   </div>
     <li class="dropdown menu_left">
   	<a href="javascript:void(0)" class="menu_item" id="Public">Public▼</a>
@@ -37,10 +37,16 @@
       <a href="#">settings</a>
     </div>
   </li>
+  <li class="menu_right">
+    <div>
+      <button id="search_btn"><img src="images/search_icon.gif" width="20px"></button>
+      <input id="search_bar" type="text" placeholder="Search..">
+    </div>
+  </li>
  </ul>
 
 <div id="chats">
-<script src="script.js"></script>
+<script src="scripts/script.js"></script>
   <button onclick="myFunction()" class="chatbtn">Chatrooms▲
   </button>
   <div id="Chatbox" class="chat-content">
